@@ -1,0 +1,51 @@
+Contexto:
+Dado que estou na tela de Análise do cliente.
+E existe um cliente sendo analisado.
+
+Cenário: Redes sociais
+E tem conta do Instagram vinculada.
+Quando clico no ícone do Instagram
+Então eu devo ver a página do perfil do cliente no Instagram.
+
+Cenário: Pesquisa de atividades
+E insiro a palavra "string" no campo de pesquisa
+Quando concluir a digitação
+Então a pesquisa deverá filtrar as atividades que possuem a palavra "string".
+
+|String|
+|coorporativo|
+|"teste"|
+|12345|
+
+Cenário: Totalizador de atividades.
+E existem atividades lançadas.
+Quando somo a quantidade de atividades Em atraso, Em andamento, Previstas e concluídas
+Então o resultado deve ser o total de atividades.
+
+
+Contexto:
+Dado que estou na tela de Análise de cliente
+E existe um cliente sendo analisado
+E existe limite de crédito lançado
+
+Cenário: Acréscimo do limite de crédito.
+Quando houver a baixa de um título pendente do cliente
+Então o valor do limite de crédito disponível será acrescido.
+
+Cenário: Redução do limite de crédito.
+Quando houver a inclusão de um título para o cliente
+Então o valor do limite de crédito disponível será reduzido.
+
+
+Contexto:
+Dado que estou na tela de Análise de cliente
+E existe um cliente sendo analisado
+E existem títulos financeiros lançados
+
+Cenário: Atualização do saldo de títulos financeiros vencidos e pagos.
+Quando ocorre a baixa de um título vencido
+Então o saldo de títulos vencidos deverá abatido e o saldo de títulos pagos deverá ser aumentado.
+
+Cenário: Atualização do saldo de títulos finaceiros a vencer.
+Quando ocorre o lançamento de um novo título com data inferior ou igual a data atual
+Então o saldo de títulos a vencer deverá ser acrescido.
