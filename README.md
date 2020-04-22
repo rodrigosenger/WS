@@ -11,5 +11,5 @@ Descrevi os cenários de teste imaginando um contexto onde interfaces externas g
 Para a execução do projeto em java, será necessário ter o chromedriver.exe e mudar o caminho dele na classe.
 Hoje está referenciando um diretório da minha máquina: "C:\\Users\\Jeferson\\SeleniumDrivers\\chromedriver.exe".
 
-3º Back-End
+3º Back-End.
 Acredito que sejá necessário apenas importar o json e executar a collection.
